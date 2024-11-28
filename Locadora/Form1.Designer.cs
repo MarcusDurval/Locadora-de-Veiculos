@@ -28,114 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            label2 = new Label();
-            linkLabel1 = new LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pb_imagem = new PictureBox();
+            lbl_principal = new Label();
+            tb_email = new TextBox();
+            tb_password = new TextBox();
+            btn_login = new Button();
+            lbl_cadastro = new Label();
+            lk_clique = new LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)pb_imagem).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pb_imagem
             // 
-            pictureBox1.Image = Properties.Resources.ganho_de_capital_venda_veiculo;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(504, 426);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pb_imagem.Image = Properties.Resources.ganho_de_capital_venda_veiculo;
+            pb_imagem.Location = new Point(12, 12);
+            pb_imagem.Name = "pb_imagem";
+            pb_imagem.Size = new Size(504, 426);
+            pb_imagem.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_imagem.TabIndex = 0;
+            pb_imagem.TabStop = false;
             // 
-            // label1
+            // lbl_principal
             // 
-            label1.Font = new Font("Microsoft New Tai Lue", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(522, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(257, 38);
-            label1.TabIndex = 1;
-            label1.Text = "SEJA BEM-VINDO";
+            lbl_principal.Font = new Font("Microsoft New Tai Lue", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_principal.ForeColor = Color.Gray;
+            lbl_principal.Location = new Point(527, 12);
+            lbl_principal.Name = "lbl_principal";
+            lbl_principal.Size = new Size(257, 38);
+            lbl_principal.TabIndex = 1;
+            lbl_principal.Text = "SEJA BEM-VINDO";
             // 
-            // textBox1
+            // tb_email
             // 
-            textBox1.Location = new Point(524, 78);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "E-mail";
-            textBox1.Size = new Size(266, 23);
-            textBox1.TabIndex = 2;
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            tb_email.Location = new Point(527, 109);
+            tb_email.Name = "tb_email";
+            tb_email.PlaceholderText = "E-mail";
+            tb_email.Size = new Size(266, 23);
+            tb_email.TabIndex = 2;
+            tb_email.TextAlign = HorizontalAlignment.Center;
+            tb_email.TextChanged += tb_email_TextChanged;
             // 
-            // textBox2
+            // tb_password
             // 
-            textBox2.Location = new Point(524, 130);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Password";
-            textBox2.Size = new Size(266, 23);
-            textBox2.TabIndex = 2;
-            textBox2.TextAlign = HorizontalAlignment.Center;
+            tb_password.Location = new Point(527, 161);
+            tb_password.Name = "tb_password";
+            tb_password.PlaceholderText = "Password";
+            tb_password.Size = new Size(266, 23);
+            tb_password.TabIndex = 2;
+            tb_password.TextAlign = HorizontalAlignment.Center;
+            tb_password.TextChanged += tb_password_TextChanged;
             // 
-            // button1
+            // btn_login
             // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = Properties.Resources.entrar;
-            button1.Location = new Point(524, 399);
-            button1.Name = "button1";
-            button1.Size = new Size(266, 39);
-            button1.TabIndex = 3;
-            button1.Text = "Login";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = true;
+            btn_login.BackColor = Color.Gray;
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.ForeColor = SystemColors.Control;
+            btn_login.Image = Properties.Resources.entrar;
+            btn_login.Location = new Point(524, 399);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(266, 39);
+            btn_login.TabIndex = 3;
+            btn_login.Text = "Login";
+            btn_login.TextAlign = ContentAlignment.MiddleRight;
+            btn_login.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_login.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // lbl_cadastro
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(589, 351);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 4;
-            label2.Text = "label2";
+            lbl_cadastro.AutoSize = true;
+            lbl_cadastro.ForeColor = Color.Gray;
+            lbl_cadastro.Location = new Point(560, 349);
+            lbl_cadastro.Name = "lbl_cadastro";
+            lbl_cadastro.Size = new Size(138, 15);
+            lbl_cadastro.TabIndex = 4;
+            lbl_cadastro.Text = "Ainda não tem cadastro?";
             // 
-            // linkLabel1
+            // lk_clique
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(633, 351);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(60, 15);
-            linkLabel1.TabIndex = 5;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "linkLabel1";
+            lk_clique.AutoSize = true;
+            lk_clique.LinkColor = Color.Gray;
+            lk_clique.Location = new Point(695, 349);
+            lk_clique.Name = "lk_clique";
+            lk_clique.Size = new Size(72, 15);
+            lk_clique.TabIndex = 5;
+            lk_clique.TabStop = true;
+            lk_clique.Text = "Clique Aqui:";
+            lk_clique.LinkClicked += lk_clique_LinkClicked;
             // 
             // Frm_locadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(linkLabel1);
-            Controls.Add(label2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
+            Controls.Add(lk_clique);
+            Controls.Add(lbl_cadastro);
+            Controls.Add(btn_login);
+            Controls.Add(tb_password);
+            Controls.Add(tb_email);
+            Controls.Add(lbl_principal);
+            Controls.Add(pb_imagem);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Frm_locadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Principal";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_imagem).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Label label2;
-        private LinkLabel linkLabel1;
+        private PictureBox pb_imagem;
+        private Label lbl_principal;
+        private TextBox tb_email;
+        private TextBox tb_password;
+        private Button btn_login;
+        private Label lbl_cadastro;
+        private LinkLabel lk_clique;
     }
 }

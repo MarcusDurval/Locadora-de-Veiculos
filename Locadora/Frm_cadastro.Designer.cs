@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             gp_cadastra = new GroupBox();
-            tb_email = new TextBox();
-            tb_senha = new TextBox();
-            tb_confsenha = new TextBox();
             lbl_cadastro = new Label();
+            tb_confsenha = new TextBox();
+            tb_senha = new TextBox();
+            tb_email = new TextBox();
             toolStrip1 = new ToolStrip();
             btn_novo = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
@@ -61,33 +61,6 @@
             gp_cadastra.TabIndex = 0;
             gp_cadastra.TabStop = false;
             // 
-            // tb_email
-            // 
-            tb_email.Location = new Point(40, 96);
-            tb_email.Name = "tb_email";
-            tb_email.PlaceholderText = "e-mail";
-            tb_email.Size = new Size(276, 23);
-            tb_email.TabIndex = 0;
-            tb_email.TextAlign = HorizontalAlignment.Center;
-            // 
-            // tb_senha
-            // 
-            tb_senha.Location = new Point(40, 138);
-            tb_senha.Name = "tb_senha";
-            tb_senha.PlaceholderText = "senha";
-            tb_senha.Size = new Size(276, 23);
-            tb_senha.TabIndex = 0;
-            tb_senha.TextAlign = HorizontalAlignment.Center;
-            // 
-            // tb_confsenha
-            // 
-            tb_confsenha.Location = new Point(40, 181);
-            tb_confsenha.Name = "tb_confsenha";
-            tb_confsenha.PlaceholderText = "confirmar senha";
-            tb_confsenha.Size = new Size(276, 23);
-            tb_confsenha.TabIndex = 0;
-            tb_confsenha.TextAlign = HorizontalAlignment.Center;
-            // 
             // lbl_cadastro
             // 
             lbl_cadastro.Font = new Font("Microsoft New Tai Lue", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -97,6 +70,38 @@
             lbl_cadastro.Size = new Size(137, 25);
             lbl_cadastro.TabIndex = 1;
             lbl_cadastro.Text = "CADASTRE-SE";
+            // 
+            // tb_confsenha
+            // 
+            tb_confsenha.Location = new Point(40, 181);
+            tb_confsenha.Name = "tb_confsenha";
+            tb_confsenha.PasswordChar = '*';
+            tb_confsenha.PlaceholderText = "confirmar senha";
+            tb_confsenha.Size = new Size(276, 23);
+            tb_confsenha.TabIndex = 0;
+            tb_confsenha.TextAlign = HorizontalAlignment.Center;
+            tb_confsenha.TextChanged += tb_confsenha_TextChanged;
+            // 
+            // tb_senha
+            // 
+            tb_senha.Location = new Point(40, 138);
+            tb_senha.Name = "tb_senha";
+            tb_senha.PasswordChar = '*';
+            tb_senha.PlaceholderText = "senha";
+            tb_senha.Size = new Size(276, 23);
+            tb_senha.TabIndex = 0;
+            tb_senha.TextAlign = HorizontalAlignment.Center;
+            tb_senha.TextChanged += tb_senha_TextChanged;
+            // 
+            // tb_email
+            // 
+            tb_email.Location = new Point(40, 96);
+            tb_email.Name = "tb_email";
+            tb_email.PlaceholderText = "e-mail";
+            tb_email.Size = new Size(276, 23);
+            tb_email.TabIndex = 0;
+            tb_email.TextAlign = HorizontalAlignment.Center;
+            tb_email.TextChanged += tb_email_TextChanged;
             // 
             // toolStrip1
             // 
@@ -161,6 +166,7 @@
             btn_entrar.Size = new Size(98, 55);
             btn_entrar.Text = "Entrar";
             btn_entrar.TextImageRelation = TextImageRelation.ImageAboveText;
+            btn_entrar.Click += btn_entrar_Click;
             // 
             // toolStripSeparator3
             // 
@@ -177,6 +183,7 @@
             btn_sair.Size = new Size(98, 55);
             btn_sair.Text = "Sair";
             btn_sair.TextImageRelation = TextImageRelation.ImageAboveText;
+            btn_sair.Click += btn_sair_Click;
             // 
             // pb_imagem
             // 

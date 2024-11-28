@@ -19,7 +19,8 @@ namespace Locadora
 
         private void lk_clique_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Frm_cadastro cadastro = new Frm_cadastro();
+            cadastro.ShowDialog();
         }
     }
 }

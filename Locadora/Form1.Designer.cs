@@ -131,7 +131,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Frm_locadora";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Principal";
+            Text = "Frm_locadora";
             ((System.ComponentModel.ISupportInitialize)pb_imagem).EndInit();
             ResumeLayout(false);
             PerformLayout();

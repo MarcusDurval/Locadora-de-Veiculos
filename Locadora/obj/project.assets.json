@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\Curso completo de C#\\Locadora_multimarcas\\Locadora\\Locadora\\Locadora.csproj",
+      "projectUniqueName": "D:\\CSHARP\\Curso completo de C#\\Locadora_multimarcas\\Locadora\\Locadora\\Locadora.csproj",
       "projectName": "Locadora",
-      "projectPath": "C:\\Users\\Usuário\\Desktop\\Curso completo de C#\\Locadora_multimarcas\\Locadora\\Locadora\\Locadora.csproj",
+      "projectPath": "D:\\CSHARP\\Curso completo de C#\\Locadora_multimarcas\\Locadora\\Locadora\\Locadora.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuário\\Desktop\\Curso completo de C#\\Locadora_multimarcas\\Locadora\\Locadora\\obj\\",
+      "outputPath": "D:\\CSHARP\\Curso completo de C#\\Locadora_multimarcas\\Locadora\\Locadora\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

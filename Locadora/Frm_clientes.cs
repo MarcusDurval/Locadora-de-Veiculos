@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Locadora
 {
-    public partial class Frm_principal : Form
+    public partial class Frm_clientes : Form
     {
-        public Frm_principal()
+        public Frm_clientes()
         {
             InitializeComponent();
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            Frm_clientes frm_Clientes = new Frm_clientes();
-            frm_Clientes.ShowDialog();
         }
     }
 }

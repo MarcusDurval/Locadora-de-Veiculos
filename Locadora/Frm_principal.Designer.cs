@@ -107,6 +107,7 @@
             toolStripButton1.Size = new Size(98, 55);
             toolStripButton1.Text = "Clientes";
             toolStripButton1.TextImageRelation = TextImageRelation.ImageAboveText;
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // toolStripSeparator2
             // 
